@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MLA Doc Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 16px;
+      width: 300px;
+      box-sizing: border-box;
+    }
+    h2 {
+      margin-bottom: 12px;
+      font-size: 18px;
+      text-align: center;
+    }
+    label {
+      font-weight: bold;
+      font-size: 13px;
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 4px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 6px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+    button {
+      margin-top: 16px;
+      width: 100%;
+      padding: 10px;
+      background-color: #8641b4;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    button:hover {
+      background-color: #621496;
+    }
+    #status {
+      margin-top: 12px;
+      text-align: center;
+      font-size: 13px;
+    }
+    #status a {
+      color: #b11e1e;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h2>MLA Doc Generator</h2>
+
+  <label for="name">Your Full Name</label>
+  <input id="name" type="text" placeholder="e.g., Jane Doe"/>
+
+  <label for="instructor">Instructor's Name</label>
+  <input id="instructor" type="text" placeholder="e.g., Mr. Smith"/>
+
+  <label for="course">Course</label>
+  <input id="course" type="text" placeholder="e.g., English 101"/>
+
+  <label for="title">Paper Title</label>
+  <input id="title" type="text" placeholder="e.g., The Effects of Climate Change"/>
+
+
+  <button id="generate">Generate MLA Doc</button>
+  <div id="status"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
